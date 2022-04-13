@@ -4,6 +4,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Candal&family=Lobster&family=Open+Sans:wght@300&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <!--BootstrapCSS link required to workproperly-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>About</title>
     <link rel="stylesheet" href="./About/style.css">
 </head>
@@ -28,10 +30,33 @@
         <p>I majored and got my BS degree in Event Meeting and Management. My journey in events came to a stop due to the pandemic. But it was still an adventure to work in a hotel and work weddings.</p>
         <p>My hobbies consist of watching movies, being cozy with my cat, and drawing. I mainly specialize in anime-style drawing or scenic traditional medium art.</p>
     </div>
+<!--buttons moved to the right
     <div class="buttonsRight">
-        <img src="./Images/linkedIn.png" alt="LinkedIn" class="linkedin">
-        <button type="button">Resume</button>
-    </div>
+-->
+    <!-- Modal -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            <img src="./Images/linkedIn.png" alt="LinkedIn" class="linkedin">
+        </button>
+            <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            <img src="./Images/logos_linkedin.png" alt="LinkedIn">
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        You will be directed to an external site shortly.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="resume">Resume</button>
 </section1>
 
 <section2>
@@ -40,19 +65,19 @@
     <div class="skills">
         <div class="miro">
             <img src="./Images/miro.png" class="miroImage">
-            <h3>Miro</h3>
+            <p>Miro</p>
         </div>
         <div class="figma">
             <img src="./Images/figma.png" class="figmaImage">
-            <h3>Figma</h3>
+            <p>Figma</p>
         </div>
         <div class="delight">
             <img src="./Images/happy face.png" class="happyImage">
-            <h3>Creating user delight components to keep the users engaged when exploring the website or app</h3>
+            <p>Creating user delight components to keep the users engaged when exploring the website or app</p>
         </div>
         <div class="userTesting">
             <img src="./Images/feedback.png" class="feedbackImage">
-            <h3>User Testing and applying those feedback towards the prototype</h3>
+            <p>User Testing and applying those feedback towards the prototype</p>
         </div>
     </div>
 </section2>
@@ -60,5 +85,8 @@
 <footer>@ 2022 by Aviva Nguyen</footer>
 
 <script src="./About/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </html>

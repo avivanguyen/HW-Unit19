@@ -7,3 +7,7 @@ $("button:active").click(function(){
 $(".linkedin").click(function(){
   alert ("You will be directed to an external site.")
 });
+
+$('#exampleModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
